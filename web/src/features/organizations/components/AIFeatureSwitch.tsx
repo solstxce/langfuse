@@ -51,7 +51,7 @@ export default function AIFeatureSwitch() {
 
   const updateAIFeatures = api.organizations.update.useMutation({
     onSuccess: () => {
-      void updateSession();
+      updateSession();
       setConfirmOpen(false);
     },
     onError: () => {

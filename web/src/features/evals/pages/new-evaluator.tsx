@@ -83,7 +83,7 @@ export default function NewEvaluatorPage() {
   const handleUseUpdatedEvaluator = () => {
     if (!latestTemplate) return;
 
-    void router.replace(
+    router.replace(
       {
         pathname: router.pathname,
         query: {

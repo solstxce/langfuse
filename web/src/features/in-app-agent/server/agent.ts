@@ -86,7 +86,7 @@ export function createAgUiStream(params: {
       };
 
       const abort = () => {
-        void adapter.interrupt().catch(() => undefined);
+        adapter.interrupt().catch(() => undefined);
         closeController();
       };
 
